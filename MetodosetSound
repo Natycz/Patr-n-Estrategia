@@ -1,0 +1,11 @@
+public class Animal {
+    protected ISound iSound;
+
+    public Animal(ISound sound) {
+        this.iSound = sound;
+    }
+
+    public void setSound(ISound sound) {
+        this.iSound = sound;
+    }
+}
