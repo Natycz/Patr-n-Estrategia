@@ -1,0 +1,11 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class CatTest {
+
+    @Test
+    public void testSound() {
+        Cat cat = new Cat();
+        assertEquals("Meow", cat.sound());
+    }
+}
