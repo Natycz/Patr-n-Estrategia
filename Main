@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        // Crear instancia de Dog y asignarle el sonido Bark
+        Dog dog = new Dog();
+        Bark barkSound = new Bark();
+        dog.setSound(barkSound);
+
+        System.out.println("Dog Sound: " + dog.makeSound()); // Debería imprimir "Bark"
+
+        // Crear instancia de Cat y asignarle el sonido Meow
+        Cat cat = new Cat();
+        Meow meowSound = new Meow();
+        cat.setSound(meowSound);
+
+        System.out.println("Cat Sound: " + cat.makeSound()); // Debería imprimir "Meow"
+
+        // Cambiar el sonido de Dog a Meow (ejemplo de polimorfismo en tiempo de ejecución)
+        dog.setSound(meowSound);
+        System.out.println("Dog Sound after change: " + dog.makeSound()); // Debería imprimir "Meow"
+    }
+}
